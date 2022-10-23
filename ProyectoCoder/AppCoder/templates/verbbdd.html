@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos: Familia</title>
+</head>
+<body>
+    <ul>
+        {% for familia in verbbdd %}
+            <li>Falimiar {{familia.id}}: {{familia.nombre}} {{familia.apellido}} tiene {{familia.edad}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
